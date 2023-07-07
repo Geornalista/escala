@@ -186,7 +186,7 @@ def busca_escalacao(jogadores):
     jogo = [s.title() for s in list(lista_jogos[item]) if str(s) != 'nan']
     jogo = [x.replace('-', ' ') for x in jogo]
     with tab5:
-      st.subheader(f'[Partida {item+1}: {lista_datas[item][0]} {lista_datas[item][3].title()} {lista_datas[item][5]} X {lista_datas[item][6]} {lista_datas[item][4].title()} ({lista_datas[item][1].title()} - Estádio: {lista_datas[item][2].title()})]({lista_datas[item][-2]}) ')
+      st.subheader(f'[Partida {item+1}: {lista_datas[item][0]} {lista_datas[item][3].title()} {int(lista_datas[item][5])} X {int(lista_datas[item][6])} {lista_datas[item][4].title()} ({lista_datas[item][1].title()} - Estádio: {lista_datas[item][2].title()})]({lista_datas[item][-2]}) ')
 
     for jogador in jogo:
       if jogador == jogo[0]:
